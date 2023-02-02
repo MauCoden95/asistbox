@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 300ms;
+}
+
+:root{
+    --color: #ff6347;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    position: relative;
+    background: var(--color);
+}
+
+
+
+
+
+
+
+
+
+/*INGRESO*/
+#entry,
+#login{
+    width: 100vw;
+    height: 100vh;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#entry div,
+#login div{
+    width: 35rem;
+    min-height: 50rem;
+    background: #fff;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#entry div img,
+#login div img{
+    width: 70%;
+    margin: 2rem auto;
+}
+
+#entry div .fa-briefcase{
+    position: absolute;
+    top: 40rem;
+    left: 75rem;
+    font-size: 2rem;
+}
+
+#login div .fa-user{
+    position: absolute;
+    top: 38rem;
+    left: 75rem;
+    font-size: 2rem;
+}
+
+#login div .fa-key{
+    position: absolute;
+    top: 44rem;
+    left: 75rem;
+    font-size: 2rem;
+}
+
+#entry div form,
+#login div form{
+    width: 70%;
+    margin: 2rem auto;
+}
+
+#entry div form input,
+#login div form input{
+    display: block;
+    width: 100%;
+    font-size: 2rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+#entry div form input[type=number]::-webkit-inner-spin-button, 
+#entry div form input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+#entry  div a,
+#login  div a{
+    font-size: 2rem;
+    text-align: center;
+    text-decoration: none;
+    color: var(--color);
+    margin: 1rem 0;
+}
+
+#entry  div a:hover,
+#login  div a:hover{
+    text-decoration: underline;
+}
