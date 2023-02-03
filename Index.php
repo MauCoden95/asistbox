@@ -1,4 +1,5 @@
 <?php
+    session_start();
    
     require_once('./Config/Parameters.php');
     require_once('./Autoload.php');

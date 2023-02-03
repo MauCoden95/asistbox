@@ -11,11 +11,14 @@
 <body>
     <section id="entry">
         <div>
-            <img src="<?= base_url ?>Assets/Img/AsistMax.png" alt="Logo">
+            <img src="<?= base_url ?>Assets/Img/Logo.png" alt="Logo">
 
             <form action="" method="post" autocomplete="off">
-                <input type="number" name="code" placeholder="Codigo de empleado">
-                <i class="fas fa-briefcase"></i>
+                <div class="form_div">
+                    <input type="number" name="code" placeholder="Codigo de empleado">
+                    <i class="fas fa-briefcase"></i>
+                </div>
+                
                 <input type="submit" value="Registrar">
             </form>
 

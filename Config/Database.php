@@ -1,6 +1,6 @@
 <?php
     class Database{
-        public function connect(){
+        public static function connect(){
             $db = new mysqli('localhost', 'root', '', 'asistbox');
             $db->query("SET NAMES UTF8");
 

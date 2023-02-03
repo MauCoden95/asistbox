@@ -34,11 +34,11 @@ body{
     background: transparent;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
-#entry div,
-#login div{
+#entry > div,
+#login > div{
     width: 35rem;
     min-height: 50rem;
     background: #fff;
@@ -47,7 +47,7 @@ body{
     flex-direction: column;
 }
 
-#entry div img,
+#entry  div img,
 #login div img{
     width: 70%;
     margin: 2rem auto;
@@ -62,15 +62,15 @@ body{
 
 #login div .fa-user{
     position: absolute;
-    top: 38rem;
-    left: 75rem;
+    top: 1rem;
+    left: 21rem;
     font-size: 2rem;
 }
 
 #login div .fa-key{
     position: absolute;
-    top: 44rem;
-    left: 75rem;
+    top: 1rem;
+    left: 21rem;
     font-size: 2rem;
 }
 
@@ -78,6 +78,14 @@ body{
 #login div form{
     width: 70%;
     margin: 2rem auto;
+}
+
+.form_div{
+    position: relative;
+    width: 100%;
+    height: 4rem;    
+    margin-bottom: 2rem;
+    background: red;
 }
 
 #entry div form input,
@@ -108,3 +116,16 @@ body{
 #login  div a:hover{
     text-decoration: underline;
 }
+
+strong{
+    display: block;
+    width: 100%;
+    margin: 2rem auto;
+    padding: 1rem;
+    color: #ffffff;
+    background: #741707;
+    text-align: center;
+}
+
+
+

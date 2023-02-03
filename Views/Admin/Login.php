@@ -11,13 +11,21 @@
 <body>
     <section id="login">
         <div>
-            <img src="<?= base_url ?>Assets/Img/AsistMax.png" alt="Logo">
+            <img src="<?= base_url ?>Assets/Img/Logo.png" alt="Logo">
 
-            <form action="" method="post" autocomplete="off">
-                <input type="text" name="username" placeholder="Usuario">
-                <i class="fas fa-user"></i>
-                <input type="password" name="password" placeholder="Contraseña">
-                <i class="fas fa-key"></i>
+            <form action="<?= base_url ?>Admin/loginAdmin" method="post" autocomplete="off">
+                <?php if(isset($_SESSION['error_login'])) : ?>
+                    <strong>Error, usuario y/o contraseña incorrectos</strong>
+                <?php endif; ?>
+
+                <div class="form_div">
+                    <input type="text" name="username" placeholder="Usuario" required>
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="form_div">
+                    <input type="password" name="password" placeholder="Contraseña" required>
+                    <i class="fas fa-key"></i>
+                </div>
                 <input type="submit" value="Ingresar">
             </form>
 
