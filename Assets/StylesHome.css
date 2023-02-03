@@ -56,7 +56,7 @@ html{
     border-radius: 2rem;
 }
 
-#navbar a{
+#navbar .logout{
     display: block;
     width: 50%;
     font-size: 2rem;
@@ -68,6 +68,6 @@ html{
     color: #fff;
 }
 
-#navbar a:hover{
+#navbar .logout:hover{
     background: rgb(247, 106, 106);
 }
