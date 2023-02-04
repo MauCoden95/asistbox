@@ -6,23 +6,23 @@
     
 
   
-
-    if (isset($_GET['controller'])) {
+    if ($_GET['controller']) {
         $controller = $_GET['controller'].'Controller';
 
         if ($controller && class_exists($controller)) {
-            $main = new $controller();
-    
-            if ($_GET['action'] && method_exists($controller,$_GET['action'])) {
+            $controlador = new $controller();
+
+            if ($_GET['action'] && method_exists($controller, $_GET['action'])) {
                 $action = $_GET['action'];
-                $main->$action();
-                
+                $controlador->$action();
             }
         }
     }else{
         $controller = new DefaultController();
         $controller->index();
     }
+
+    
 
 
     

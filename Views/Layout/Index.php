@@ -13,6 +13,8 @@
         <div>
             <img src="<?= base_url ?>Assets/Img/Logo.png" alt="Logo">
 
+            <h2 class="hour"></h2>
+
             <form action="" method="post" autocomplete="off">
                 <div class="form_div">
                     <input type="number" name="code" placeholder="Codigo de empleado">
@@ -25,5 +27,8 @@
             <a href="<?= base_url ?>Admin/login">Login Administrador</a>
         </div>
     </section>
+
+
+    <script src="<?= base_url ?>Main.js"></script>
 </body>
 </html>

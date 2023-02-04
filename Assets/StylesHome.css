@@ -39,12 +39,17 @@ html{
 .home-section{
     width: 100vw;
     height: 90vh;
+    display: flex;
 }
 
 #navbar{
     padding: 1px;
-    width: 25%;
+    width: 30%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
     background: rgb(10, 22, 189);
 }
 
@@ -70,4 +75,80 @@ html{
 
 #navbar .logout:hover{
     background: rgb(247, 106, 106);
+}
+
+.container{
+    position: relative;
+    width: 70%;
+    height: 100%;
+}
+
+.add{
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    font-size: 2rem;
+    padding: 1rem;
+    background: rgb(21, 155, 21);
+    border: none;
+    transition: all 300ms;
+}
+
+.add:hover{
+    background: rgb(74, 199, 74);
+}
+
+.form-add{
+    position: absolute;
+    top: 2rem;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 40rem;
+    min-height: 20rem;
+    background: rgb(214, 214, 214);
+    border: .1rem solid #000;
+    z-index: 10000;
+    display: none;
+    transition: all 300ms;
+}
+
+.form-add h3{
+    text-align: center;
+    font-size: 2rem;
+    margin: 2rem 0;
+}
+
+.form-add input{
+    width: 80%;
+    display: block;
+    margin: 1rem auto;
+    font-size: 2rem;
+    padding: 1rem;
+    border-radius: .5rem;
+}
+
+.form-close{
+    width: 2.5rem;
+    padding: .5rem;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    background: #f00;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.success{
+    display: block;
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-align: center;
+    background: rgb(37, 114, 37);
+    color: #fff;
 }

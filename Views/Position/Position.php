@@ -35,7 +35,7 @@
                         data-bs-parent="#accordionFlushExample">
                         <div class="accordion-body fs-5"><a href="">Listado de empleados</a></div>
                     </div>
-                   
+
                 </div>
                 <div class="accordion-item mb-3">
                     <h2 class="accordion-header" id="flush-headingTwo">
@@ -46,7 +46,8 @@
                     </h2>
                     <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
                         data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body fs-5"><a href="<?= base_url ?>Position/index">Listado de cargos</a></div>
+                        <div class="accordion-body fs-5"><a href="<?= base_url ?>Position/index">Listado de cargos</a>
+                        </div>
                     </div>
                 </div>
                 <div class="accordion-item">
@@ -71,15 +72,28 @@
         </nav>
 
         <div class="container">
-         
+            <button class="add">Agregar Cargo <i class="fas fa-plus-circle"></i></button>
+
+            <form action="http://localhost/AsistBox/Position/add" method="post" class="form-add">
+                <h3>Agregar cargo</h3>
+                <?php if(isset($_SESSION['add_position']) && $_SESSION['add_position'] == true) :  ?>
+                    <strong class="success">Cargo añadido exitosamente</strong></strong>
+                <?php endif; ?>
+                <input type="text" name="position" required>
+                <input type="submit" value="Agregar">
+                <i class="form-close"><i class="fas fa-times"></i></i>
+            </form>
         </div>
 
-    
-</section>
+    </section>
 
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+        <script src="<?= base_url ?>Main.js"></script>
 </body>
 
 </html>
